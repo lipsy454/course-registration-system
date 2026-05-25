@@ -1,0 +1,8 @@
+12 kala kala@gmail.com Java Full Stack
+15 David david@gmail.com Spring boot
+14 jesh jesh@gmail.com cloud computing
+13 Jones Jones@gmail.com Java
+16 Jacob jacob@gmail.com Spring boot
+17 jeshma jeshma@gmail.com cloud computing
+18 Aakash aakash@gmail.com Java
+19 Aakash aakash@gmail.com Java Full Stack

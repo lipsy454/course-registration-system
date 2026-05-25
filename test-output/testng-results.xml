@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-20T12:15:41 IST" name="Default suite" finished-at="2026-04-20T12:15:49 IST" duration-ms="7223">
+    <groups>
+    </groups>
+    <test started-at="2026-04-20T12:15:41 IST" name="Default test" finished-at="2026-04-20T12:15:49 IST" duration-ms="7223">
+      <class name="com.example.course.CourseDBTest">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:41 IST" name="springTestContextBeforeTestClass" finished-at="2026-04-20T12:15:41 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:41 IST" name="springTestContextPrepareTestInstance" finished-at="2026-04-20T12:15:48 IST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="6331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:48 IST" name="springTestContextBeforeTestMethod" finished-at="2026-04-20T12:15:48 IST" duration-ms="497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.example.course.CourseDBTest.printAvailableCourses()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="printAvailableCourses()[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:48 IST" name="printAvailableCourses" finished-at="2026-04-20T12:15:49 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAvailableCourses -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:49 IST" name="springTestContextAfterTestMethod" finished-at="2026-04-20T12:15:49 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.example.course.CourseDBTest.printAvailableCourses()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:49 IST" name="springTestContextBeforeTestMethod" finished-at="2026-04-20T12:15:49 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.example.course.CourseDBTest.printEnrolledStudents()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="printEnrolledStudents()[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:49 IST" name="printEnrolledStudents" finished-at="2026-04-20T12:15:49 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printEnrolledStudents -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:49 IST" name="springTestContextAfterTestMethod" finished-at="2026-04-20T12:15:49 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.example.course.CourseDBTest.printEnrolledStudents()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.example.course.CourseDBTest@3b956878]" started-at="2026-04-20T12:15:49 IST" name="springTestContextAfterTestClass" finished-at="2026-04-20T12:15:49 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.example.course.CourseDBTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
