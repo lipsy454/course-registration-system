@@ -13,20 +13,20 @@ pipeline {
 
         stage('Build Maven Project') {
             steps {
-                sh 'chmod +x mvnw'
-                sh './mvnw clean package -DskipTests'
+                bat 'chmod +x mvnw'
+                bat './mvnw clean package -DskipTests'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t course-app .'
+                bat 'docker build -t course-app .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8081:8081 course-app'
+                bat 'docker run -d -p 8081:8081 course-app'
             }
         }
     }
