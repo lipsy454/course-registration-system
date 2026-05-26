@@ -4,36 +4,23 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/lipsy454/course-registration-system.git'
-            }
-        }
-
         stage('Build Maven Project') {
             steps {
-                bat 'chmod +x mvnw'
-                bat './mvnw clean package -DskipTests'
+                sh 'chmod +x mvnw'
+                sh './mvnw clean package -DskipTests'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t course-app .'
-            }
-        }
-
-        stage('Stop Old Container') {
-            steps {
-                bat 'docker stop course-container || true'
-                bat 'docker rm course-container || true'
+                sh 'docker build -t course-app .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 8081:8081 --name course-container course-app'
+                sh 'docker rm -f course-container || true'
+                sh 'docker run -d -p 8089:8089 --name course-container course-app'
             }
         }
     }
