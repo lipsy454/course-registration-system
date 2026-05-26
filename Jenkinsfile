@@ -24,14 +24,22 @@ pipeline {
             }
         }
 
+        stage('Stop Old Container') {
+            steps {
+                bat 'docker stop course-container || true'
+                bat 'docker rm course-container || true'
+            }
+        }
+
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 8081:8081 course-app'
+                bat 'docker run -d -p 8081:8081 --name course-container course-app'
             }
         }
     }
 
     post {
+
         success {
             echo 'Pipeline Executed Successfully'
         }
